@@ -9,4 +9,3 @@ for /f "delims=" %%i in ('docker exec %ID% jupyter notebook list') do set URL=%%
 set URL=%URL: :: /tf=%
 set URL=%URL:0.0.0.0=127.0.0.1%
 start firefox -new-tab %URL%
-PAUSE
