@@ -3,10 +3,10 @@
 
 :: Commits should be done regularly while working including just before quitting the notebook.
 
-::git pull origin master
-::start "" "%PROGRAMFILES%\Git\bin\sh.exe" --login
+git pull origin master
+start "" "%PROGRAMFILES%\Git\bin\sh.exe" --login
 start cmd /c call "./open_firefox_tab.bat"
 docker run -it --rm -p 8888:8888 -v %cd%:/tf/notebooks tensorflow-pandas
-::git add .
-::git commit -m "Closing notebook"
-::git push origin master
+git add .
+git commit -m "Closing notebook"
+git push origin master
