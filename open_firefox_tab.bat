@@ -1,6 +1,6 @@
 :: Finds the running docker container ID, retrieves the token from within the container and opens a new firefox tab
 
-::@echo off
+@echo off
 REM timeout allows container to start before opening the new tab
 timeout /t 2 /nobreak
 
