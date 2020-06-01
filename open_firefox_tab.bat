@@ -2,7 +2,7 @@
 
 @echo off
 REM timeout allows container to start before opening the new tab
-timeout /t 2 /nobreak
+timeout /t 3.5 /nobreak
 
 for /f "delims=" %%i in ('docker ps -aqf "ancestor=tensorflow-pandas"') do set ID=%%i
 for /f "delims=" %%i in ('docker exec %ID% jupyter notebook list') do set URL=%%i
